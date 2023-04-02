@@ -6,7 +6,7 @@ locals {
 terraform {
   required_version = ">= 1.0"
   backend "s3" {
-    region = "ap-northeast-1"        # CHANGE
+    region = "ap-northeast-1"            # CHANGE
     bucket = "ei-show-tutorial-tfaction" # CHANGE
     key    = "github/foo/v1/terraform.tfstate"
   }
