@@ -1,6 +1,6 @@
 locals {
   # CHANGE
-  repo_name      = "ei-show/tutorial-tfaction"
+  repo_name      = "ei-show/tutorial_tfaction"
   s3_bucket_name = "ei-show-tutorial-tfaction"
   region         = "ap-northeast-1"
 }
