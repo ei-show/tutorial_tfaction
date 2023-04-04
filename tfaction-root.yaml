@@ -15,3 +15,18 @@ target_groups:
     aws_assume_role_arn: arn:aws:iam::652481963500:role/GitHubActions_Terraform_github_terraform_apply # CHANGE
   tfmigrate_apply_config:
     aws_assume_role_arn: arn:aws:iam::652481963500:role/GitHubActions_Terraform_github_tfmigrate_apply # CHANGE
+- working_directory: root/
+  target: root/
+  aws_region: ap-northeast-1
+  s3_bucket_name_plan_file: 'ei-show-tutorial-tfaction' # CHANGE
+  s3_bucket_name_tfmigrate_history: 'ei-show-tutorial-tfaction' # CHANGE
+  template_dir: templates/github
+
+  terraform_plan_config:
+    aws_assume_role_arn: arn:aws:iam::652481963500:role/GitHubActions_Terraform_github_terraform_plan # CHANGE
+  tfmigrate_plan_config:
+    aws_assume_role_arn: arn:aws:iam::652481963500:role/GitHubActions_Terraform_github_tfmigrate_plan # CHANGE
+  terraform_apply_config:
+    aws_assume_role_arn: arn:aws:iam::652481963500:role/GitHubActions_Terraform_github_terraform_apply # CHANGE
+  tfmigrate_apply_config:
+    aws_assume_role_arn: arn:aws:iam::652481963500:role/GitHubActions_Terraform_github_tfmigrate_apply # CHANGE
